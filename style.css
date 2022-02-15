@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.baniere{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),  #4822a0), url(https://img.le-dictionnaire.com/violet-couleur.jpg) center/cover no-repeat;
+    height: 100vh;
+}
+
+.logo img{
+    width: 180px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+
+.baniere-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 200px;
+}
+
+.baniere-text h1{
+   font-size: 100px; 
+   font-family: 'Lobster', cursive;
+}
+
+.baniere-text p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.baniere_btn{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.baniere_btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: 1px solid #fff;
+    position: inherit;
+    z-index: 1;
+    transition: color 0.6 ease-in;
+}
+
+.baniere_btn a span{
+    width: 0;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.6 ease-in;
+}
+
+.baniere_btn a:hover span{
+    width: 100%;
+}
+
+.baniere_btn a:hover span{
+    color: #000;
+}
+
+.baniere_btn a:hover{
+    color: #000;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 20px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.btn-menu{
+    width: 50px;
+    height: 50px;
+    background: #0676d1;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    border-radius: 10px;
+    z-index: 3;
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    justify-content: center;
+    line-height: 50px;
+    transform: 0.6 ease-in ;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+    .baniere-text h1{
+        font-size: 44px;
+     } 
+
+     .baniere_btn a{
+        display: block;
+        margin: 20px auto;
+    }
+
+    .baniere{
+
+        height: 80vh;
+    }
+}
+
+.img-footer{
+    max-width: 200px;
+    opacity: 0.3;
+    position: absolute;
+    left: 49%;
+    top: 50%;
+    transform: translate(-50%, -50);
+    transition: 0.6 ease-in;
+}
+
+.side-nav {
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+  }
+  
+  /* To hide the sub-nav */
+  .wrapper {
+    background: #333;
+    height: 100vh;
+    width: 75px;
+  }
+  
+  .three-dots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  .dot {
+    flex-shrink: 0;
+    margin: 10px 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000;
+  }
+  .d1 {background: rgb(0, 0, 0);}
+  .d2 {background: rgb(0, 0, 0);}
+  .d3 {background: rgb(0, 0, 0);}
+  
+  .nav-bloc {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom: 1px solid #f2f2f21e;
+  }
+  .nav-bloc:hover {
+    background: rgb(24, 24, 24);
+  }
+  .nav-bloc:hover .sub-nav {
+    transform: translateX(75px);
+  }
+  .nav-bloc svg {
+    width: 25px;
+    fill: #f2f2f2;
+    transition:  0.2s ease-in-out ;
+  }
+  .nav-bloc:hover  svg {
+    fill: #8824ca;
+  }
+  .sub-nav {
+    padding: 0px;
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #333;
+    z-index: -1;
+    color: white;
+    /* Hidden at the left side */
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-in-out;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+  }
+  .sub-nav h2 {
+    font-family: open sans, sans-serif;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+  }
+  .sub-nav ul {
+    list-style-type: none;
+  }
+  .sub-nav li {
+    padding: 15px 20px;
+  }
+  .sub-nav li:hover {
+    background: rgba(160, 160, 160, 0.555);
+  }
+  .sub-nav li a {
+     color: #f2f2f2;
+     text-decoration: none;
+  }
+  
+  
+  .main-content {
+    padding-left: 75px;
+    color: #f3f3f3;
+  }
+  .main-content h1 {
+    font-family: Open Sans, sans-serif;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 40px;
+  }
+  
+  .main-content p {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 30px;
+    line-height: 1.7;
+  }
