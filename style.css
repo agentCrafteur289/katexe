@@ -198,7 +198,7 @@ h1 span {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 5px solid #f4f809;
+  border: 5px solid #5a12cc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,8 +213,66 @@ h1 span {
   height: 40px;
 }
 
+.btnarcenciel{
+  text-align: center;
+  margin-top: 20px;
+}
 
+.btnarcenciel a{
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: #fff;
+  border: 1px solid #fff;
+  position: inherit;
+  z-index: 1;
+  transition: color 0.6s ease-in;
+}
 
+.btnarcenciel a:hover span{
+  width: 100%;
+}
+
+.btnarcenciel a:hover{
+  color: rgb(0, 0, 0);
+}
+
+.btnarcenciel {
+  padding: 20px 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 0px;
+  background: transparent;
+  position: relative;
+  transition: all .2s;
+  overflow: hidden;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+}
+
+.btnarcenciel::after {
+  content: '';
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -50px;
+  left: 700px;
+  background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+  z-index: -1;
+  transition: all .5s;
+}
+
+.btnarcenciel:hover::after {
+  transform: rotate(150deg);
+}
+
+.btnarcenciel:hover {
+  transform: translate(0,-6px);
+  box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
+}
 
 .banieregen {
   background: linear-gradient(rgba(0, 0, 0, 0.5),  #4822a0), url(https://img.le-dictionnaire.com/violet-couleur.jpg) center/cover no-repeat;
