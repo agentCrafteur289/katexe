@@ -355,8 +355,7 @@ h1 span {
   }
 }
 
-a:link, a:visited
-{
+a:link, a:visited{
     color: white;
     text-decoration: none;
 }
@@ -369,6 +368,7 @@ a:link, a:visited
 }
 
 .btninvisible {
+  font-size: 30px;
   position: relative;
   text-align: center;
   width: 50%;
@@ -378,29 +378,32 @@ a:link, a:visited
 }
 
 .btninvisibleinsta {
+  font-size: 30px;
   position: relative;
   text-align: center;
   width: 50%;
   position: absolute;
-  top: 44.5%;
+  top: 43.5%;
   left: 72%;
 }
 
 .btninvisibletwitter {
+  font-size: 30px;
   position: relative;
   text-align: center;
   width: 50%;
   position: absolute;
-  top: 53%;
+  top: 52%;
   left: 72%;
 }
 
 .btninvisiblediscord {
+  font-size: 30px;
   position: relative;
   text-align: center;
   width: 50%;
   position: absolute;
-  top: 61%;
+  top: 60.5%;
   left: 72%;
 }
 
