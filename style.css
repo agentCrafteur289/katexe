@@ -152,7 +152,7 @@ h1 span {
 
 .logo {
   position: absolute;
-  right: 93%;
+  right: 95%;
   top: 90%;
   width: 80px;
   height: 80px;
@@ -221,7 +221,7 @@ h1 span {
   overflow: hidden;
   position: absolute;
   cursor: pointer;
-  z-index: 99;
+  
 }
 .btngen:after {
   -moz-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
@@ -368,13 +368,14 @@ a:link, a:visited{
 }
 
 .btninvisible {
-  font-size: 30px;
+  font-size: 40px;
   position: relative;
   text-align: center;
   width: 50%;
   position: absolute;
-  top: 49.99%;
-  left: 55%;
+  top: 48%;
+  left: 25%;
+  z-index: 1;
 }
 
 .btninvisibleinsta {
