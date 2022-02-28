@@ -177,14 +177,25 @@ h1 span {
   justify-content: center;
   align-items: center;
   margin: 10px 0;
+  right: -200px;
   background: #f1f1f1;
   cursor: pointer;
   position: relative;
 }
 
+.bulle a {
+  display: flex;
+  align-items: center;
+}
+
+.medias .bulle {animation: travellingLeft 1s forwards}
+.medias .bulle:nth-child(2) {animation-delay: .3s}
+.medias .bulle:nth-child(3) {animation-delay: .6s}
+.medias .bulle:nth-child(4) {animation-delay: .9s}
+
 .logo-medias {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 
 
@@ -367,50 +378,17 @@ a:link, a:visited{
   text-align: center;
 }
 
-.btninvisible {
-  font-size: 40px;
-  position: relative;
-  text-align: center;
-  width: 50%;
-  position: absolute;
-  top: 48%;
-  left: 25%;
-  z-index: 1;
-}
-
-.btninvisibleinsta {
-  font-size: 30px;
-  position: relative;
-  text-align: center;
-  width: 50%;
-  position: absolute;
-  top: 43.5%;
-  left: 72%;
-}
-
-.btninvisibletwitter {
-  font-size: 30px;
-  position: relative;
-  text-align: center;
-  width: 50%;
-  position: absolute;
-  top: 52%;
-  left: 72%;
-}
-
-.btninvisiblediscord {
-  font-size: 30px;
-  position: relative;
-  text-align: center;
-  width: 50%;
-  position: absolute;
-  top: 60.5%;
-  left: 72%;
-}
-
-
 .banieregen {
   background: linear-gradient(rgba(0, 0, 0, 0.5),  #4822a0), url(https://img.le-dictionnaire.com/violet-couleur.jpg) center/cover no-repeat;
     height: 100vh;
 }
 
+@keyframes travellingLeft {
+  from {
+    right: -200px;
+    opacity: 0;
+  } to {
+    right: 0;
+    opacity: 1;
+  }
+}
